@@ -16,3 +16,21 @@
 //    Mark est plus élevé que celui de John ? true").
 //
 // BONNE CHANCE 😀
+
+const poidsMark = 79;
+const poidsJohn = 103;
+const tailleMark = 1.75;
+const tailleJohn = 1.96;
+
+const bmiMark = poidsMark / (tailleMark * tailleMark);
+const bmiJohn = poidsJohn / (tailleJohn * tailleJohn);
+
+console.log(bmiJohn, bmiMark);
+
+let marksFatter;
+
+marksFatter = bmiMark > bmiJohn;
+
+console.log(`Est-ce que le BMI de Mark est plus élevé que celui de John ? ${marksFatter}.`);
+
+
